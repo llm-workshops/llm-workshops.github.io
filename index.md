@@ -25,4 +25,4 @@ Alexander Sternfeld and Prof. Dr. Andrei Kucharavy
 * 16.00 - 16.30: How Agents Talk to Tools: Towards MCP
 * 16.30 - 16.45: Closing Remarks
 
-![](assets/images/logos.png)
+![](assets/logos.jpg)
