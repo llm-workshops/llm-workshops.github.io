@@ -1,0 +1,16 @@
+title: "SAS LLMs and AI Agents"
+description: "Hands-on workshop materials"
+remote_theme: just-the-docs/just-the-docs
+callouts:
+  action:
+    title: Action
+    color: blue
+  warning:
+    title: Warning
+    color: red
+  tip:
+    title: Tip
+    color: green
+  note:
+    title: Note
+    color: yellow
