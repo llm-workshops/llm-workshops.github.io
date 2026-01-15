@@ -1,6 +1,6 @@
 ---
-title: "Setting up your own Open WebUI"
-parent: "Technical installation"
+title: "Setting up Your Own Open WebUI"
+parent: "Technical Installation"
 nav_order: 2
 ---
 
@@ -87,6 +87,6 @@ You are limited to 23GB of memory (RAM). Make sure to not load too many models s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/smPmNy_bcGg?si=LOxC-vHxRPKI_IwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next step
-Now that you have set up your Open WebUI instance, we can start exploring all different functionalities, take some time to browse around! The next part of the workshop will be [RAG](RAG/exercise.md).
+Now you have set up your Open WebUI instance, with a local Ollama as a backend. In the [next section](api.md), we will add an OpenAI-compatible API endpoint to our Open WebUI. This will allow us to run externally hosted models in our chat interface.
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
