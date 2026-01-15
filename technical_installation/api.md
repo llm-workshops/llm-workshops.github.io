@@ -32,3 +32,6 @@ We will now add a new OpenAI-compatible endpoint to demonstrate how this works. 
 You can now return to the main chat interface, and start a new chat. When opening the model selection dropdown, you should see the Mistral 7B model available in the list. You can select it and start a conversation, to see whether the API endpoint works.
 
 ### What's next
+Now that you have set up your Open WebUI instance, we can start exploring all different functionalities, take some time to browse around! The next part of the workshop will be [RAG](RAG/exercise.md).
+
+_Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
