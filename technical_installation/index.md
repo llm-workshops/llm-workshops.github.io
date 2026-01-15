@@ -1,5 +1,5 @@
 ---
-title: "Technical installation"
+title: "Technical Installation"
 nav_order: 1
 ---
 
