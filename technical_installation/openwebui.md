@@ -82,7 +82,7 @@ Now we can access our Open WebUI instance at the following address: `http://<YOU
 > Congrats! You have now set up your very own LLM interface! Take some time to look around and explore the possibilities.
 
 {: .warning}
-You are limited to XXXX GB of memory (RAM). Make sure to not load too many models simultaneously, otherwise you may overload this memory. If you want to remove a model, you can do so by going to the admin panel > settings > connections. Here, next to `http://ollama:11434`, you will see a "manage" button, where you can delete models. 
+You are limited to 23GB of memory (RAM). Make sure to not load too many models simultaneously, otherwise you may overload this memory. If you want to remove a model, you can do so by going to the admin panel > settings > connections. Here, next to `http://ollama:11434`, you will see a "manage" button, where you can delete models. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/smPmNy_bcGg?si=LOxC-vHxRPKI_IwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
