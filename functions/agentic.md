@@ -1,5 +1,5 @@
 ---
-title: "Agentic workflows"
+title: "Agentic Workflows"
 parent: "Augmenting LLM Capabilities"
 nav_order: 2
 ---
