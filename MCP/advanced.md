@@ -1,5 +1,5 @@
 ---
-title: "Different tools"
+title: "Different Tools"
 parent: "Tools and MCP"
 nav_order: 2
 ---
