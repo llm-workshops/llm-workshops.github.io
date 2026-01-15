@@ -1,6 +1,6 @@
 ---
 title: "Functions in Open WebUI"
-parent: "Augmenting LLM Capabilities - "
+parent: "Augmenting LLM Capabilities"
 nav_order: 1
 ---
 
