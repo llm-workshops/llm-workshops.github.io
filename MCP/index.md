@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Towards MCP
+title: Tools and MCP
 nav_order: 3
 ---
