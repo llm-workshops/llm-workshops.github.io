@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Towards MCP
-nav_order: 8
+nav_order: 3
 ---
