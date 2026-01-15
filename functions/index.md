@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Open WebUI - Functions
-nav_order: 5
+title: Augmenting LLM Capabilities - Functions
+nav_order: 2
 ---
