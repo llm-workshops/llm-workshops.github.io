@@ -15,7 +15,7 @@ Alexander Sternfeld and Prof. Dr. Andrei Kucharavy
 * 09.30 - 10.15: [Serving a LLM on-prem: Open WebUI](technical_installation/server.md)
 * 10.15 - 10.45: Break
 * 10.45 - 12.00: [Open WebUI functions](functions/quickstart.md)
-* 12.00 - 13.00: [How Agents Talk to Tools: Towards MCP](mcp/quickstart.md)
+* 12.00 - 13.00: [How Agents Talk to Tools: Towards MCP](MCP/quickstart.md)
 * 13.00 - 14.00: Threat modeling and concluding remarks.
 
 ![](assets/logos.jpg)
