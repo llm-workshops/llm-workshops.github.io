@@ -1,6 +1,6 @@
 ---
-title: "Connecting to your machine"
-parent: "Technical installation"
+title: "Connecting to Your Machine"
+parent: "Technical Installation"
 nav_order: 1
 ---
 
