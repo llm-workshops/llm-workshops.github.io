@@ -1,5 +1,6 @@
 ---
 title: "Connecting to your machine"
+parent: "Technical installation"
 nav_order: 1
 ---
 
