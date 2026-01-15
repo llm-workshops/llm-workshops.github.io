@@ -22,7 +22,7 @@ We can now set up and launch our Open WebUI instance.
 > 2. Move into the openwebui directory: `cd openwebui`
 > 3. Create the docker compose file: `nano docker-compose.yaml`, and paste the code below. You can then save the file with `ctrl O + enter`, and exit nano with `ctrl X`. These steps are displayed in the image below.
 
-![](./assets/images/nano.jpg)
+![](../assets/nano.jpg)
 
 {: .action}
 Now that we have set up the docker compose file, we are ready to launch our Open WebUI instance. The only thing you have to do is enter the command `sudo docker compose up -d`, which spins up the container in the background. Make sure you are in the openwebui folder when executing the command. After the containers have started, you can verify that they are running with `sudo docker ps`. You can inspect the logs with `sudo docker logs ollama` and `sudo docker logs open-webui`.
