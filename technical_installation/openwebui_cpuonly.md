@@ -1,7 +1,7 @@
 ---
 title: "Setting up Your Own Open WebUI"
 parent: "Technical Installation"
-nav_order: 3
+nav_order: 2
 ---
 
 Now that you have set up your machine, we can continue to launching our Open WebUI instance. 
