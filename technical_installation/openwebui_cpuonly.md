@@ -71,15 +71,12 @@ Now we can access our Open WebUI instance at the following address: `http://<YOU
 
 {: .action}
 > 1. Access your Open WebUI instance at `http://<YOURIP>:3000/`, and set up your login details. 
-> 2. Load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_ We recommend for a short test the model `llama3.1:8b`.
+> 2. Load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_. Given that you currently have no access to GPUs, we recommend the model `steamdj/llama3.1-cpu-only`.
 > Congrats! You have now set up your very own LLM interface! Take some time to look around and explore the possibilities.
-
-{: .warning}
-You are limited to 23GB of memory (RAM). Make sure to not load too many models simultaneously, otherwise you may overload this memory. If you want to remove a model, you can do so by going to the admin panel > settings > connections. Here, next to `http://ollama:11434`, you will see a "manage" button, where you can delete models. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/smPmNy_bcGg?si=LOxC-vHxRPKI_IwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next step
-Now you have set up your Open WebUI instance, with a local Ollama as a backend. In the [next section](api.md), we will add an OpenAI-compatible API endpoint to our Open WebUI. This will allow us to run externally hosted models in our chat interface.
+Now you have set up your Open WebUI instance, with a local Ollama as a backend. In the [next section](api.md), we will add an OpenAI-compatible API endpoint to our Open WebUI. This will allow us to run larger models in our chat interface. 
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
