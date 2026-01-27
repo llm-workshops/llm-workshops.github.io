@@ -4,7 +4,7 @@ title: "Docker, Cuda and Nvidia drivers"
 nav_order: 1
 ---
 
-Here you will find additional information on several parts of the workshop.
+Here you will find additional information on Docker, Nvidia and Cuda. When working with an endpoint, there is no need to worry about the Nvidia drivers and toolkit. However, when working on a machine with local GPUs, this is necessary to give Docker access to the GPUs.
 
 ## Docker, Cuda and Nvidia drivers
 
