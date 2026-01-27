@@ -28,9 +28,10 @@ uv venv
 source .venv/bin/activate
 ```
 
-* Step 3: Install the fastmcp package that we will need to launch our MCP server.
+* Step 3: Install the fastmcp package that we will need to launch our MCP server. Additionally, we install pandas as we will need it in the tool we set up.
 ```bash
 uv pip install fastmcp
+uv pip install pandas
 ```
 
 This sets up an isolated Python environment where we can safely install dependencies without affecting the system Python.  
