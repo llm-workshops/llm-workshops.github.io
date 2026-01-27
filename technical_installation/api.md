@@ -39,6 +39,6 @@ You should see the API keys (secret) now as QR codes on the screen in the worksh
 You can now return to the main chat interface, and start a new chat. When opening the model selection dropdown, you should now see both the Qwen and Mistral model available in the list. You can select it and start a conversation, to see whether the API endpoints work.
 
 ### What's next
-Now that you have set up your Open WebUI instance, we can start exploring all different functionalities, take some time to browse around! The next part of the workshop will be [Open WebUI Functions](functions/quickstart.md).
+Now that you have set up your Open WebUI instance, we can start exploring all different functionalities, take some time to browse around! The next part of the workshop will be [Open WebUI Functions](../functions/quickstart.md).
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
