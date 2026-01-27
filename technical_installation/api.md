@@ -25,18 +25,18 @@ We will now add two new OpenAI-compatible endpoint to demonstrate how this works
 | Qwen/Qwen2.5-7B-Instruct           | https://b2db0789-5f8e-47da-892d-40827df4a57a.inference.at-vie-2.exoscale-cloud.com/v1 |
 | mistralai/Mistral-7B-Instruct-v0.3 | https://cf54665a-c32f-4d45-ad99-23e70fd0f175.inference.at-vie-2.exoscale-cloud.com/v1 |
 
-You should see the API keys (secret) now on the screen in the workshop, and in the Discord server. The steps below will now guide you through adding the API endpoint to your Open WebUI instance.
+You should see the API keys (secret) now as QR codes on the screen in the workshop. The steps below will now guide you through adding the API endpoint to your Open WebUI instance.
 
 {: action}
 > 1. Go to the Admin Panel in Open WebUI, and navigate to Settings -> Connections
-> 2. Under OpenAI API, click on the Configure button (the wheel icon, see image below)
+> 2. For each of the endpoints, under OpenAI API, add a new connection (plus icon)
 > 3. Enter:
 >      * The provided URL in the endpoint field
 >      * The provided API key in te Bearer token field
-> 4. Save the configuration
+> 4. Save the configuration. 
 
 ### Verifying the connection
-You can now return to the main chat interface, and start a new chat. When opening the model selection dropdown, you should see the Mistral 7B model available in the list. You can select it and start a conversation, to see whether the API endpoint works.
+You can now return to the main chat interface, and start a new chat. When opening the model selection dropdown, you should now see both the Qwen and Mistral model available in the list. You can select it and start a conversation, to see whether the API endpoints work.
 
 ### What's next
 Now that you have set up your Open WebUI instance, we can start exploring all different functionalities, take some time to browse around! The next part of the workshop will be [RAG](RAG/exercise.md).
