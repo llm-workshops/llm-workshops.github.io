@@ -22,7 +22,7 @@ We will now connect to our machine through SSH. SSH (Secure Shell) is a standard
 Before we can launch our Open WebUI instance, we need to install Docker. Docker allows applications to run in isolated, reproducible containers so that software behaves the same on any machine. If you are unfamiliar with Docker and want to learn more, please refer to the [additional information](../additional_information.md) section. If you simply want to continue to set up your environment, we do so by executing the script below.
 
 {: .action}
-We will now install docker by retrieving the official installation script. After installation, the Docker service is restarted to ensure it is ready to use.
+We will now install docker by retrieving the official installation script. After installation, the Docker service is restarted to ensure it is ready to use. Copy the code below and paste and execute it in your terminal.
 
 ```bash
 # Install docker
