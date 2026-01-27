@@ -150,6 +150,6 @@ Once we configured the tool correctly in the admin settings, we can start to use
 > How many men have the first name "Peter"?
 
 ## What's next?
-You now know the basis of MCP servers, if you want to experiment yourself with different types of tools and data, have a look at the [next section](your_own_tool.md).
+You now know the basis of MCP servers, if you want to experiment yourself with different types of tools and data, have a look at the [next section](advanced.md).
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
