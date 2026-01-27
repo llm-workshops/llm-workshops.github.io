@@ -13,7 +13,7 @@ We will now connect to our machine through SSH. SSH (Secure Shell) is a standard
 
 {: .action}
 > 1. Open a terminal of your preference: powershell, command prompt, zsh, ...
-> 2. Connect to your machine with the command `ssh <YOURIP>@ubuntu`, where you enter the IP that is given to you
+> 2. Connect to your machine with the command `ssh ubuntu@<YOURIP>`, where you enter the IP that is given to you
 > 3. Enter the password, and connect!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/m5I15UTNp6Y?si=fbFOFsXy8SV8SOKe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
