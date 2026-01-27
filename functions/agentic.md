@@ -10,9 +10,9 @@ nav_order: 2
 > In this section, you will work with Open WebUI pipes. For pipes to function properly, you need to explicitly assign a regular model to be in
 > charge for **external** tasks, as otherwise your agentic frameworks will automatically be used for tasks they are not intended for, such as
 > generating the title of a conversation. You can do so through the following steps:
-> 1. Set the model `llama3.1:8b` to be publicly available, via `Admin Panel -> Settings -> Models`. By clicking on the model `llama3.1:8b`, you
-> can change the visibility from public to private, and save the settings at the bottom. 
-> 2. Through `Admin Panel -> Settings -> Interface`, specify the External Task Model to be `llama3.1:8b`. Do not forget to save the settings at
+> 1. Set the model `llama3.1:8b` to be publicly available, via `Admin Panel -> Settings -> Models`. By clicking on the pencil next to a model, you
+> get access to the model settings. At the top right in these settings, you change the access from public to private, and do not forget to save the settings at the bottom. Do this for both the Mistral and Qwen model.
+> 2. Through `Admin Panel -> Settings -> Interface`, specify the External Task Model to be `mistralai/Mistral-7B-Instruct-v0.3`. Do not forget to save the settings at
 > the bottom right. 
 
 Now that you have experimented with filters, we move to a more advanced functionality in Open WebUI: [pipe functions](https://docs.openwebui.com/features/plugin/functions/pipe/). With a pipe, you build your own model in Open WebUI, with full control over how the data flows and which models are included in the pipeline. With such pipes, there are many possibilities, such as the integration of external API's, combining multiple models or using external libraries. In this workshop, we will demonstrate how to use pipes for building an agentic pipeline for a simple safety evaluation of generated code. 
