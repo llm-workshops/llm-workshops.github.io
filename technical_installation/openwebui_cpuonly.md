@@ -77,6 +77,6 @@ Now we can access our Open WebUI instance at the following address: `http://<YOU
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BctkLsN7jU8?si=6vXQJzX3j_N-m-lW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next step
-Now you have set up your Open WebUI instance, with a local Ollama as a backend. In the [next section](api.md), we will add an OpenAI-compatible API endpoint to our Open WebUI. This will allow us to run larger models in our chat interface. 
+Now you have set up your Open WebUI instance, with a local Ollama as a backend. You may have noticed that chatting with the CPU only LLM goes rather slow. This is common, as more powerful hardware is needed for speedy inference. In the [next section](api.md), we will add an OpenAI-compatible API endpoint to our Open WebUI. This will allow us to run larger models in our chat interface. 
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
