@@ -477,16 +477,16 @@ Now that you have set up the action function, it is time to explore the function
 
 {: .action}
 > Explore the functionalities of the action function:
->     - Have a look at the different options in the user valves (summary style, summary length, ...), which you can access by clicking on the `controls` at the top right when in a chat, and then selecting the corresponding valves.
->     - When does the summarization work well? When does it not perform well?
->     - When looking at the code, can you see where the valves are configured? And where the different options for different configurations are specified?
+>     * Have a look at the different options in the user valves (summary style, summary length, ...), which you can access by clicking on the `controls` at the top right when in a chat, and then selecting the corresponding valves.
+>     * When does the summarization work well? When does it not perform well?
+>     * When looking at the code, can you see where the valves are configured? And where the different options for different configurations are specified?
 
 After you have explored the base functionalities of the summarization function, it is time to give it your own spin. Think about the current functionalities, are there missing features? Are there cases in which the function was not performing up to your standard? 
 
 {: .action}
 > Based on your  extend/improve the summarization function. We provide two suggestions, but if you have other ideas to improve the function, feel free to follow those!
->     - Add another possible style of the summarization to the options. For example, a humoristic summary or an extremely detailed summary.
->     - Add the option to instruct the model to provide key points and/or action items. _Hint: you need to add a user valve, and append an instruction to the prompt, depending on the setting of the valve._
+>     * Add another possible style of the summarization to the options. For example, a humoristic summary or an extremely detailed summary.
+>     * Add the option to instruct the model to provide key points and/or action items. _Hint: you need to add a user valve, and append an instruction to the prompt, depending on the setting of the valve._
 
 ## Exercise 2: Adding Valves to Your Filters
 
