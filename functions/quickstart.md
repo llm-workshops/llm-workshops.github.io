@@ -58,7 +58,7 @@ We start by adding our function to our Open WebUI instance. This is done through
 
 {: .action}
 > 1. In your Open WebUI instance, go to `admin panel` -> `functions`. In the top right, click on `+ New Function`.
-> 2. Give the function a name (e.g. "PPI filter) and a description. Then copy-paste the function below, and save the function.
+> 2. Give the function a name (e.g. "PPI filter) and a description. Then remove the template code that is automatically there, and copy-paste the function below as the code. Then, save the function.
 > 3. From the `functions` tab in the `admin panel`, make sure that the function is toggled on.Then, by   click on the `•••` to also enable it globally (see image below).
 
 <details markdown="1">
@@ -142,7 +142,7 @@ class Filter:
 ```
 </details>
 
-![](../assets/images/enable_globally.png)
+![](../assets/images/function_enable.png)
 
 Now that we have set up the function, we can use it in chat!
 
