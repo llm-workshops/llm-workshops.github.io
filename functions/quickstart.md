@@ -73,8 +73,7 @@ from typing import Tuple, Optional
 SENSITIVE_PATTERNS = {
     "api_key": re.compile(r"(api[_-]?key\s*[:=]\s*[A-Za-z0-9_\-]{16,})", re.IGNORECASE),
     "private_key": re.compile(
-        r"-----BEGIN (RSA|EC|DSA)? ?PRIVATE KEY-----\n.*\n.*",
-        re.IGNORECASE,
+        r"-----BEGIN (RSA|EC|DSA)? ?PRIVATE KEY-----(?:\r?\n.*?){0,2}", re.IGNORECASE
     ),
     "aws_secret": re.compile(
         r"(aws[_-]?secret[_-]?access[_-]?key\s*[:=]\s*[A-Za-z0-9/+=]{40})",
@@ -98,13 +97,20 @@ class Filter:
         """Redact sensitive information from the text."""
         global CONTAINS_PPI
         detected = False
-        for _, pattern in SENSITIVE_PATTERNS.items():
+        for key, pattern in SENSITIVE_PATTERNS.items():
             if pattern.search(text):
                 detected = True
-            text = pattern.sub(
-                lambda m: m.group(0).split(":")[0] + ": [REDACTED]",
-                text,
-            )
+            if key in ["api_key", "aws_secret"]:
+                text = pattern.sub(
+                    lambda m: m.group(0).split(":")[0] + ": [REDACTED]",
+                    text,
+                )
+            else:  # for private_key
+                # Match the header and the next two lines (if they exist)
+                text = pattern.sub(
+                    lambda m: "-----BEGIN PRIVATE KEY-----\n[REDACTED]\n[REDACTED]",
+                    text,
+                )
 
         if warn_user and detected:
             CONTAINS_PPI = True
