@@ -217,36 +217,42 @@ def openai_generate(
 import requests
 from fastmcp import FastMCP
 
-OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
-MODEL = "llama3.1:8b"
+OPENAI_URL = "https://cf54665a-c32f-4d45-ad99-23e70fd0f175.inference.at-vie-2.exoscale-cloud.com/v1/chat/completions"
+MODEL = "mistralai/Mistral-7B-Instruct-v0.3"
+API_KEY = "YOUR_API_KEY_HERE"
 
 # Initialize FastMCP
 mcp = FastMCP("llm-tools-demo", port=8001)
 mcp.settings.host = "0.0.0.0"
 
-def ollama_generate(
+def openai_generate(
     prompt: str,
     system: str | None = None,
     temperature: float = 0.7,
     max_tokens: int = 512,
 ) -> str:
-    payload = {
-        "model": MODEL,
-        "prompt": prompt,
-        "options": {
-            "temperature": temperature,
-            "num_predict": max_tokens,
-        },
-        "stream": False,
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json",
     }
 
+    messages = []
     if system:
-        payload["system"] = system
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
 
-    response = requests.post(OLLAMA_URL, json=payload, timeout=60)
+    payload = {
+        "model": MODEL,
+        "messages": messages,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+    }
+
+    response = requests.post(OPENAI_URL, headers=headers, json=payload, timeout=60)
     response.raise_for_status()
 
-    return response.json()["response"]
+    return response.json()["choices"][0]["message"]["content"]
+
 
 # -----------------------------
 # Summary and rewriting tool
@@ -270,8 +276,8 @@ def summarize_and_rewrite_text(text: str, style: str) -> str:
     TEXT:
     {text}
     """
-    
-    summary = ollama_generate(prompt_summary)
+
+    summary = openai_generate(prompt_summary)
 
     prompt_rephrase = f"""
     Rewrite the following text, such that it adheres to the following style: {style}. 
@@ -280,9 +286,10 @@ def summarize_and_rewrite_text(text: str, style: str) -> str:
     {summary}
     """
 
-    rewritten_summary = ollama_generate(prompt_rephrase)
+    rewritten_summary = openai_generate(prompt_rephrase)
 
     return f"The summary of the document, rewritten in the style {style}, is: {rewritten_summary}"
+
 
 # -----------------------------
 # Weather tool
@@ -305,10 +312,12 @@ def get_weather(city: str):
     except Exception as e:
         return {"error": str(e)}
 
+
 # ------------------ Run Server ------------------
 
 if __name__ == "__main__":
     mcp.run(transport="streamable-http")
+
 ```
 
 </details>
