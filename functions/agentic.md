@@ -10,7 +10,7 @@ nav_order: 2
 > In this section, you will work with Open WebUI pipes. For pipes to function properly, you need to explicitly assign a regular model to be in
 > charge for **external** tasks, as otherwise your agentic frameworks will automatically be used for tasks they are not intended for, such as
 > generating the title of a conversation. You can do so through the following steps:
-> 1. Set the model `llama3.1:8b` to be publicly available, via `Admin Panel -> Settings -> Models`. By clicking on the pencil next to a model, you
+> 1. Set the models to be publicly available, via `Admin Panel -> Settings -> Models`. By clicking on the pencil next to a model, you
 > get access to the model settings. At the top right in these settings, you change the access from public to private, and do not forget to save the settings at the bottom. Do this for both the Mistral and Qwen model.
 > 2. Through `Admin Panel -> Settings -> Interface`, specify the External Task Model to be `mistralai/Mistral-7B-Instruct-v0.3`. Do not forget to save the settings at
 > the bottom right. 
@@ -96,11 +96,11 @@ class User(BaseModel):
 class Pipe:
     class Valves(BaseModel):
         MODEL: str = Field(
-            default="llama3.1:8b",
+            default="mistralai/Mistral-7B-Instruct-v0.3",
             description="The model to use for the pipeline.",
         )
         GENERATION_MODE: str = Field(
-            default="ollama",
+            default="openai",
             description="The generation",
         )
 
@@ -391,7 +391,6 @@ class Pipe:
         await __event_emitter__(
             {"type": "status", "data": {"description": description, "done": True}}
         )
-```
 </details>
 
 ## What is next?
