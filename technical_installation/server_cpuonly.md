@@ -33,7 +33,7 @@ sudo systemctl restart docker
 {: .tip}
 You can verify whether docker is installed correctly by testing the command `sudo docker ps`, which will list all docker containers on your machine.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/L_7PrpTrK4s?si=0YjjBL1GIN1Hc2z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qHTGinURvl8?si=cIY98q7sKjpPMwUT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next step
 When you are done with setting up your machine, you can continue to launching your own Open WebUI instance. This is explained in the [next page](openwebui.md).
