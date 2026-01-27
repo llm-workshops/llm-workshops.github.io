@@ -27,7 +27,7 @@ In this exercise, we will work on an action function allowing the user to summar
 {: .action}
 > First, we will set up the base version of the action function in your Open WebUI instance. Below this action blok, you can open the base version of the code. You can add it in a similar fashion as before:
 > 1. Add the function through the functions tab of the admin panel, save it, and through the `•••` option enable it globally.
-> 2. Remaining in the functions tab of the admin panel, and through the valves of the function, change the `Api Base Url` to one of the provided API URLs.
+> 2. Remaining in the functions tab of the admin panel, and through the valves of the function, change the `Api Base Url` to one of the provided API URLs. Set the `model_name` valve to the corresponding model.
 > 3. Now, ask the LLM a question, and click on the `Summarization` icon below the response at the right.
 
 <details markdown="1">
@@ -44,7 +44,7 @@ class Action:
     class Valves(BaseModel):
         # LLM Provider Configuration
         llm_provider: Literal["openai", "ollama"] = Field(
-            default="ollama",
+            default="openai",
             description="LLM provider to use (openai or ollama)",
         )
 
@@ -58,7 +58,7 @@ class Action:
             description="API key for authentication (not needed for local Ollama)",
         )
         model_name: str = Field(
-            default="llama3.1:8b",
+            default="mistralai/Mistral-7B-Instruct-v0.3",
             description="Model name (e.g. llama3.1:8b)",
         )
 
