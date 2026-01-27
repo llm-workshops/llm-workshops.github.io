@@ -301,7 +301,7 @@ class Pipe:
             parsed_code = self.parse_output(generated_code)
 
             status_update = "The ***generated code*** is:\n"
-            status_update += f"```scala\n{parsed_code}\n```"
+            status_update += f"```python\n{parsed_code}\n```"
             status_code = status_update
 
             await self.send_data(status_update, __event_emitter__)
@@ -333,9 +333,9 @@ class Pipe:
             else:
                 vulnerabilities_update += "No vulnerabilities found.\n"
 
-            vulnerabilities_update = vulnerabilities_update + "\n\n" + status_code
+            vulnerabilities_update = status_code + "\n\n" + vulnerabilities_update
             await self.send_data(
-                vulnerabilities_update, __event_emitter__, replace=True
+                vulnerabilities_update, __event_emitter__, replace=False
             )
 
             # Log the final prompt and answer
@@ -350,7 +350,7 @@ class Pipe:
                 "Pipeline completed successfully.", __event_emitter__
             )
 
-            return status_update
+            return vulnerabilities_update
 
         except Exception as e:
             return f"Error: {str(e)}"
