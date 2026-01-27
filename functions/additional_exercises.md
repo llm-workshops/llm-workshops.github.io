@@ -9,7 +9,7 @@ In the previous sections, you learned how to:
 - Use **filter functions** to intercept and modify user input and model output
 - Build **pipe functions** to construct agentic workflows with multiple LLM calls
 
-We now provide you with several different exercises to deepen your understanding and explore different applications. There is most likely insufficient time to do all exercises, hence we recommend you to choose the one that seems most interesting to you. For exercises 1 and 3, a solution is provided. 
+We now provide you with several different exercises to deepen your understanding and explore different applications. There is most likely insufficient time to do all exercises, hence we recommend you to choose the one that seems most interesting to you. Whereas exercises 1 and 3 are more guided, exercise 2 is more open-ended.
 
 1. [Exploring **action functions**](#exercise-1-building-an-action-function)
 2. [Using **valves** as user-configurable controls](#exercise-2-adding-valves-to-your-filters)
@@ -22,19 +22,13 @@ We now provide you with several different exercises to deepen your understanding
 * [Visualizing a response from a LLM](https://openwebui.com/posts/4319b6c2-5070-43e4-8310-738cd70ae61f)
 * [Convert LLM responses in markdown to Word documents](https://openwebui.com/posts/76716d12-5896-4698-a4ac-62fa23dd7251)
 
-In this exercise, we will work on an action function allowing the user to summarize the initial LLM response. Below, you will find a base version of the action function.
+In this exercise, we will work on an action function allowing the user to summarize the initial LLM response. Below, you will find a base version of the action function. We will go through setting up an initial version of the summarization function, after which we will give you some suggestions to adapt the function.
 
 {: .action}
-> 1. First, set up the base version of the action function in your Open WebUI instance.
->     - Add the function through the functions tab of the admin panel, save it, and through the `•••` option enable it globally.
->     - Remaining in the functions tab of the admin panel, and through the valves of the function, change the `Api Base Url` to `http://ollama:11434/api`.
->     - Then, ask the LLM a question, and click on the `Summarization` icon below the response at the right.
-> 2. Now, you can explore the functionalities of the action function
->     - Have a look at the different options in the user valves (summary style, summary length, ...), which you can access by clicking on the `controls` at the top right when in a chat, and then selecting > the corresponding valves.
->     - When does the summarization work well? When does it not perform well?
-> 3. Now, it is time for you to extend/improve the summarization function. We provide two suggestions, but if you have other ideas to improve the function, feel free to follow those!
->        - Add another possible style of the summarization to the options. For example, a humoristic summary or an extremely detailed summary.
->        - Add the option to instruct the model to provide key points and/or action items. _Hint: you need to add a user valve, and append an instruction to the prompt, >          depending on the setting of the valve._
+> First, we will set up the base version of the action function in your Open WebUI instance. Below this action blok, you can open the base version of the code. You can add it in a similar fashion as before:
+> 1. Add the function through the functions tab of the admin panel, save it, and through the `•••` option enable it globally.
+> 2. Remaining in the functions tab of the admin panel, and through the valves of the function, change the `Api Base Url` to one of the provided API URLs.
+> 3. Now, ask the LLM a question, and click on the `Summarization` icon below the response at the right.
 
 <details markdown="1">
 <summary>Show summarization action function code</summary>
@@ -479,6 +473,20 @@ Format your response with these sections:
 ```
 </details>
 
+Now that you have set up the action function, it is time to explore the functionalities, and gain a more proper understanding of the code behind it.
+
+{: .action}
+> Explore the functionalities of the action function:
+>     - Have a look at the different options in the user valves (summary style, summary length, ...), which you can access by clicking on the `controls` at the top right when in a chat, and then selecting the corresponding valves.
+>     - When does the summarization work well? When does it not perform well?
+>     - When looking at the code, can you see where the valves are configured? And where the different options for different configurations are specified?
+
+After you have explored the base functionalities of the summarization function, it is time to give it your own spin. Think about the current functionalities, are there missing features? Are there cases in which the function was not performing up to your standard? 
+
+{: .action}
+> Based on your  extend/improve the summarization function. We provide two suggestions, but if you have other ideas to improve the function, feel free to follow those!
+>     - Add another possible style of the summarization to the options. For example, a humoristic summary or an extremely detailed summary.
+>     - Add the option to instruct the model to provide key points and/or action items. _Hint: you need to add a user valve, and append an instruction to the prompt, depending on the setting of the valve._
 
 ## Exercise 2: Adding Valves to Your Filters
 
