@@ -123,7 +123,7 @@ Executing the python file would block your terminal, not allowing you to do anyt
 
 {: .action}
 > 1. Start a tmux session with `tmux new-session -s mcp`
-> 2. Start the tool server with `python tools.py`, then detach from the session with `ctrl + b, s`
+> 2. Start the tool server with `python tools.py`, then detach from the session with `ctrl + b, d`
 > When you want to re-attach to the tmux session, you can use `tmux attach`
 
 ## Configuring the tools in Open WebUI
