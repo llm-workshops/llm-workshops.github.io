@@ -64,7 +64,7 @@ services:
 > * _ports_: we choose to map the port 8080 in the container to port 3000 on the machine. Therefore, our Open WebUI will be available on port 3000.
 > * _environment_: here we specify where Ollama is running. We could also secure our application more tightly by specifying a secret key.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fTbv9woR-F8?si=-7UyDPDZJy4kR06b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zC566mXk3l8?si=yq9luNaVrRO_5O4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Accessing the Open WebUI instance
 Now we can access our Open WebUI instance at the following address: `http://<YOURIP>/3000`. Here, you can set up your login credentials, and start your first chat.
@@ -74,7 +74,7 @@ Now we can access our Open WebUI instance at the following address: `http://<YOU
 > 2. Load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_. Given that you currently have no access to GPUs, we recommend the model `steamdj/llama3.1-cpu-only`.
 > Congrats! You have now set up your very own LLM interface! Take some time to look around and explore the possibilities.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/smPmNy_bcGg?si=LOxC-vHxRPKI_IwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BctkLsN7jU8?si=6vXQJzX3j_N-m-lW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next step
 Now you have set up your Open WebUI instance, with a local Ollama as a backend. In the [next section](api.md), we will add an OpenAI-compatible API endpoint to our Open WebUI. This will allow us to run larger models in our chat interface. 
