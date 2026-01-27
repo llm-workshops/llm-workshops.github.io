@@ -25,7 +25,7 @@ We can now set up and launch our Open WebUI instance.
 ![](../assets/nano.jpg)
 
 {: .action}
-Now that we have set up the docker compose file, we are ready to launch our Open WebUI instance. The only thing you have to do is enter the command `sudo docker compose up -d`, which spins up the container in the background. Make sure you are in the openwebui folder when executing the command. After the containers have started, you can verify that they are running with `sudo docker ps`. You can inspect the logs with `sudo docker logs ollama` and `sudo docker logs open-webui`.
+Now that we have set up the docker compose file, we are ready to launch our Open WebUI instance. The only thing you have to do is enter the command `sudo docker compose up -d`, which spins up the container in the background. Make sure you are in the openwebui folder when executing the command, be aware that this can take a few minuets. After the containers have started, you can verify that they are running with `sudo docker ps`. You can inspect the logs with `sudo docker logs ollama` and `sudo docker logs open-webui`.
 
 ```yaml
 services:
