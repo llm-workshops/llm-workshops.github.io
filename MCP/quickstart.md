@@ -127,17 +127,20 @@ Executing the python file would block your terminal, not allowing you to do anyt
 > When you want to re-attach to the tmux session, you can use `tmux attach`
 
 ## Configuring the tools in Open WebUI
-Next, we will connect our tool server to Open WebUI. Follow the steps below to achieve this.
+Next, we will connect our tool server to Open WebUI. Follow the steps below to achieve this, also see the image below for further context.
 
 {: .action}
-> 1. In Open WebUI, go to `Admin panel -> External Tools -> Add Connection`
+> 1. In Open WebUI, go to `Admin panel -> Settings -> External Tools -> + icon next to Manage Tool Servers` 
 > 2. Fill in the fields as follows:
 >     * **Type**: MCP
->     * **URL**: `http://IP:8000/mcp` (replace `IP` with your server's IP address)
+>     * **URL**: `http://<YOURIP>:8000/mcp` (replace `<YOURIP>` with your server's IP address)
+>     * **Auth**: None
 >     * **Headers**: `{"Accept": "application/json, text/event-stream", "Content-Type": "application/json"}`
 >     * **ID**: `tools`
 >     * **Name/Description**: Here you can give the tool server a name and a description
 >     * **Function Name Filter List**: Here we enter the function names, in our case: `count_by_first_name, count_by_job_keyword`
+
+![](../assets/mcp_settings.png)
 
 ## Using the tool in Open WebUI
 Once we configured the tool correctly in the admin settings, we can start to use it in the chat. In the box where you enter the prompt, click on the icon _integrations_, and toggle on your MCP in the tools section. Below are a few prompts you can try out, but feel free to give them your own spin and test the limits of the LLM!
