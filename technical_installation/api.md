@@ -15,7 +15,7 @@ An API (Application Programming Interface) allows different software systems to 
 
 API endpoints are generally configured to serve multiple users simultaneously. The figure below displays what such a set-up looks like. Multiple API clients send their requests to a central load balancer, which distributes the incoming traffic across several API gateways to ensure scalability and high availability. Each API gateway then routes the requests to the appropriate backend API services, handling concerns such as authentication, rate limiting, and request routing. Because of this system, each client only interacts with a unified entry point while the system efficiently balances load and manages access to multiple underlying services.
 
-![](../assets/api_add.png)
+![](../assets/add_api.png)
 
 ### Adding an API endpoint in Open WebUI
 We will now add two new OpenAI-compatible endpoint to demonstrate how this works. We provide an endpoint for two models: `Qwen/Qwen2.5-7B-Instruct` and `mistralai/Mistral-7B-Instruct-v0.3`, with the following URLs:
