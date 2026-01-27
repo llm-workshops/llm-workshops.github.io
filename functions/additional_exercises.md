@@ -59,7 +59,7 @@ class Action:
         )
         model_name: str = Field(
             default="mistralai/Mistral-7B-Instruct-v0.3",
-            description="Model name (e.g. llama3.1:8b)",
+            description="Model name",
         )
 
         # Request Configuration
@@ -547,12 +547,12 @@ class Pipe:
     class Valves(BaseModel):
         MODEL: str = (
             Field(
-                default="llama3.1:8b",
+                default="mistralai/Mistral-7B-Instruct-v0.3",
                 description="The model to use for the pipeline.",
             ),
         )
         GENERATION_MODE: str = Field(
-            default="ollama",
+            default="openai",
             description="The generation",
         )
 
