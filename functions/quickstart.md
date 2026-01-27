@@ -73,7 +73,8 @@ from typing import Tuple, Optional
 SENSITIVE_PATTERNS = {
     "api_key": re.compile(r"(api[_-]?key\s*[:=]\s*[A-Za-z0-9_\-]{16,})", re.IGNORECASE),
     "private_key": re.compile(
-        r"-----BEGIN (RSA|EC|DSA)? ?PRIVATE KEY-----", re.IGNORECASE
+        r"-----BEGIN (RSA|EC|DSA)? ?PRIVATE KEY-----\n.*\n.*",
+        re.IGNORECASE,
     ),
     "aws_secret": re.compile(
         r"(aws[_-]?secret[_-]?access[_-]?key\s*[:=]\s*[A-Za-z0-9/+=]{40})",
