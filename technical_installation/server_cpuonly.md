@@ -36,6 +36,6 @@ You can verify whether docker is installed correctly by testing the command `sud
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qHTGinURvl8?si=cIY98q7sKjpPMwUT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Next step
-When you are done with setting up your machine, you can continue to launching your own Open WebUI instance. This is explained in the [next page](openwebui.md).
+When you are done with setting up your machine, you can continue to launching your own Open WebUI instance. This is explained in the [next page](openwebui_cpuonly.md).
 
 _Author: [Alexander Sternfeld](https://ch.linkedin.com/in/alexander-sternfeld-93a01799)_
