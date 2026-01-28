@@ -11,7 +11,7 @@ nav_order: 2
 > charge for **external** tasks, as otherwise your agentic frameworks will automatically be used for tasks they are not intended for, such as
 > generating the title of a conversation. You can do so through the following steps:
 > 1. Set the models to be publicly available, via `Admin Panel -> Settings -> Models`. By clicking on the pencil next to a model, you
-> get access to the model settings. At the top right in these settings, you change the access from public to private, and do not forget to save the settings at the bottom. Do this for both the Mistral and Qwen model.
+> get access to the model settings. At the top right in these settings, you change the access from private to public, and do not forget to save the settings at the bottom. Do this for both the Mistral and Qwen model.
 > 2. Through `Admin Panel -> Settings -> Interface`, specify the External Task Model to be `mistralai/Mistral-7B-Instruct-v0.3`. Do not forget to save the settings at
 > the bottom right. 
 
