@@ -392,6 +392,7 @@ class Pipe:
         await __event_emitter__(
             {"type": "status", "data": {"description": description, "done": True}}
         )
+```
 </details>
 
 ## What is next?
