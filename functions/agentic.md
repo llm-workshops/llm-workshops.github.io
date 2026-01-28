@@ -65,6 +65,7 @@ We will now build a pipe for code generation with LLMs, that puts a particular f
 <summary>Show Code Safety Pipeline</summary>
 
 ```python
+
 from typing import Dict, List, Optional, Callable, Any, AsyncGenerator
 from pydantic import BaseModel, Field
 from fastapi import Request
