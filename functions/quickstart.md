@@ -83,6 +83,7 @@ SENSITIVE_PATTERNS = {
 
 CONTAINS_PPI = False
 
+
 class Filter:
     class Valves(BaseModel):
         pass
@@ -101,16 +102,10 @@ class Filter:
             if pattern.search(text):
                 detected = True
             if key in ["api_key", "aws_secret"]:
-                text = pattern.sub(
-                    lambda m: m.group(0).split(":")[0] + ": [REDACTED]",
-                    text,
-                )
+                text = re.sub(pattern, "[REDACTED]", text)
             else:  # for private_key
                 # Match the header and the next two lines (if they exist)
-                text = pattern.sub(
-                    lambda m: "-----BEGIN PRIVATE KEY-----\n[REDACTED]\n[REDACTED]",
-                    text,
-                )
+                text = re.sub(pattern, "[REDACTED]", text)
 
         if warn_user and detected:
             CONTAINS_PPI = True
@@ -146,6 +141,7 @@ class Filter:
                     "content"
                 ] += "\n\n **Note: Sensitive information has been redacted from the user's input.**"
         return body
+
 ```
 </details>
 
