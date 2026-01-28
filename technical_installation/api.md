@@ -27,7 +27,7 @@ We will now add two new OpenAI-compatible endpoint to demonstrate how this works
 
 The API keys (secret) are available in an encrypted zip file in [this Google Drive](https://drive.google.com/drive/folders/1puP7SCZqm_W_MULqPkgFAyiVGQyVniTc?usp=sharing), the password to the zip file should now be visible on the screen. The steps below will now guide you through adding the API endpoint to your Open WebUI instance.
 
-{: action}
+{: .action}
 > 1. Go to the Admin Panel in Open WebUI, and navigate to Settings -> Connections
 > 2. For each of the endpoints, under OpenAI API, add a new connection (plus icon)
 > 3. Enter:
