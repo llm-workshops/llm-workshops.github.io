@@ -22,7 +22,7 @@ Last, we have to specify the SSH key that we want to use to connect to the compu
 
 After going through these steps, you will be able to launch your compute instance, and work on it as in the workshop!
 
-{. :note}
+{: .note}
 > Depending on what you will do on your compute instance, you may need to add rules to your default security group. This can be done through the Compute -> Security Groups tab.
 
 
