@@ -7,7 +7,8 @@ nav_order: 0
 # Welcome! 
 Thank you for attending our workshop on LLMs on premise. This website forms the backbone of the workshop, and will provide you with instructions for each of the exercises. We hope you enjoy today and learn plenty!
 
-Alexander Sternfeld and Prof. Dr. Andrei Kucharavy
+Alexander Sternfeld
+Reliable Information Lab, HES-SO Valais-Wallis
 
 ## Agenda
 
