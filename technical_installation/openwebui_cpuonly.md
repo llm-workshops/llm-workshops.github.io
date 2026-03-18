@@ -7,7 +7,7 @@ nav_order: 2
 Now that you have set up your machine, we can continue to launching our Open WebUI instance. 
 
 ## Launching our Open WebUI instance
-We will set up an [Open WebUI](https://openwebui.com/) instance, with LLMs running through [Ollama](https://ollama.com/). Ollama is a lightweight service that downloads, manages, and runs large language models, while Open WebUI provides a browser-based interface for interacting with those models through a chat-style UI. Together, they separate model execution from user interaction, making it easy to run and manage LLMs on a remote machine. We will run both services through Docker, which leads to a **robust** and **replicable** architecture. If you want to learn more about Open WebUI and Ollama and Docker, we provide additional information in [this section](<Additional Information/openwebui.md>). For now, we recommend you to continue with the set-up. We will need the following commands:
+We will set up an [Open WebUI](https://openwebui.com/) instance, with LLMs running through [Ollama](https://ollama.com/). Ollama is a lightweight service that downloads, manages, and runs large language models, while Open WebUI provides a browser-based interface for interacting with those models through a chat-style UI. Together, they separate model execution from user interaction, making it easy to run and manage LLMs on a remote machine. We will run both services through Docker, which leads to a **robust** and **replicable** architecture. If you want to learn more about Open WebUI and Ollama and Docker, we provide additional information in [this section](../additional_information/openwebui.md). For now, we recommend you to continue with the set-up. We will need the following commands:
 
 | Command        | Function          | 
 |:-------------|:------------------|
@@ -71,7 +71,7 @@ Now we can access our Open WebUI instance at the following address: `http://<YOU
 
 {: .action}
 > 1. Access your Open WebUI instance at `http://<YOURIP>:3000`, and set up your login details. 
-> 2. Load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_. Given that you currently have no access to GPUs, we recommend the model `steamdj/llama3.1-cpu-only`.
+> 2. Now you can try to load a model from [Ollama](https://ollama.com/search), by clicking on the model selection button, entering the name, and choosing _Pull from Ollama.com_. Given that you currently have no access to GPUs, a CPU-only model you can choose is `steamdj/llama3.1-cpu-only`. **Note: due to the large turn-up, some of you may have access to a smaller compute instance with less memory. This means that it is possible that teh steamdj model does not load due to memory issues. This is no problem, please continue to the next section where you add the bigger models through API's, this will work and will be the models you use for the remainder of the workshop.**
 > Congrats! You have now set up your very own LLM interface! Take some time to look around and explore the possibilities.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BctkLsN7jU8?si=6vXQJzX3j_N-m-lW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
