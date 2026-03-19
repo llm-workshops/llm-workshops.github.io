@@ -22,8 +22,8 @@ We will now add two new OpenAI-compatible endpoint to demonstrate how this works
 
 | Model                              | API URL                                                                 |
 |------------------------------------|-------------------------------------------------------------------------|
-| Qwen/Qwen2.5-7B-Instruct           | https://629087a3-82b8-4e91-afbd-af04f146b108.inference.at-vie-2.exoscale-cloud.com/v1 |
-| mistralai/Mistral-7B-Instruct-v0.3 | https://36c439b6-5930-4505-a6d5-8b86429baf69.inference.at-vie-2.exoscale-cloud.com/v1 |
+| Qwen/Qwen2.5-7B-Instruct           | https://84e543ac-0fe5-4835-a64b-25dbbab53527.inference.at-vie-2.exoscale-cloud.com/v1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | https://e96541a2-f03d-4bbf-9262-cb8713cd0321.inference.at-vie-2.exoscale-cloud.com/v1 |
 
 The API keys (secret) are available in an encrypted zip file in [this Google Drive](https://drive.google.com/drive/folders/1puP7SCZqm_W_MULqPkgFAyiVGQyVniTc?usp=sharing), the password to the zip file should now be visible on the screen. The steps below will now guide you through adding the API endpoint to your Open WebUI instance.
 
