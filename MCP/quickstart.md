@@ -32,6 +32,7 @@ source .venv/bin/activate
 ```bash
 uv pip install fastmcp
 uv pip install pandas
+uv pip install requests
 ```
 
 This sets up an isolated Python environment where we can safely install dependencies without affecting the system Python.  
