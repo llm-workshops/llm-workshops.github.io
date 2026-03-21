@@ -13,11 +13,12 @@ Reliable Information Lab, HES-SO Valais-Wallis
 
 ## Agenda
 
-* Introduction
-* [Serving a LLM on-prem: Open WebUI](technical_installation/server.md)
-* [Augmenting LLM Capabilities: Open WebUI functions](functions/quickstart.md)
-* 10.50 - 11.10: Coffee break
-* [How Agents Talk to Tools: Towards MCP](MCP/quickstart.md)
-* Threat modeling and concluding remarks.
+* 09.15 - 09.35: Introduction
+* 09.35 - 10.10: [Serving a LLM on-prem: Open WebUI](technical_installation/server.md)
+* 10.10 - 10.45: [Augmenting LLM Capabilities: Open WebUI functions](functions/quickstart.md)
+* 10.45 - 11.00: Coffee break
+* 11.00 - 11.30: [Continuation Open WebUI functions](functions/quickstart.md)
+* 11.30 - 12.10: [How Agents Talk to Tools: Towards MCP](MCP/quickstart.md)
+* 12.10 - 12.30: Threat modeling and concluding remarks.
 
 ![](assets/logos.jpg)
