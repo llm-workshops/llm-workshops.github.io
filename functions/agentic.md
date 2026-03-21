@@ -218,29 +218,28 @@ class Pipe:
         messages: List[Dict[str, str]],
         __event_emitter__: Callable,
     ) -> AsyncGenerator[str, None]:
-
+    
         response = None
         try:
             response = await self.get_response(model, messages, True)
-
+    
             if not hasattr(response, "body_iterator"):
                 if isinstance(response, dict) and "choices" in response:
                     yield response["choices"][0]["message"]["content"]
                 return
-
-            while True:
-                chunk = await response.body_iterator.read(1024)
-                if not chunk:
-                    break
-
-                for content in self.get_chunk_content(chunk):
-                    yield content
-
+    
+            async for chunk in response.body_iterator:
+                if isinstance(chunk, bytes):
+                    for content in self.get_chunk_content(chunk):
+                        yield content
+                elif isinstance(chunk, str):
+                    for content in self.get_chunk_content(chunk.encode("utf-8")):
+                        yield content
+    
         except Exception as e:
-            api_type = "Ollama"
-            error_msg = f"Error with {api_type} API: {str(e)}"
+            error_msg = f"Error: {str(e)}"
             await self.set_status_end(error_msg, __event_emitter__)
-
+    
         finally:
             if response and hasattr(response, "close"):
                 await response.close()
