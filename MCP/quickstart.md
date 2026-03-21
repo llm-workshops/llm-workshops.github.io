@@ -55,8 +55,7 @@ import requests
 import io
 
 # Initialize FastMCP
-mcp = FastMCP("user-tools-demo", port=8000)
-mcp.settings.host = "0.0.0.0"
+mcp = FastMCP("user-tools-demo")
 
 # Download CSV from Google Drive
 CSV_URL = "https://drive.google.com/uc?id=1VEi-dnEh4RbBKa97fyl_Eenkvu2NC6ki&export=download"
@@ -115,7 +114,7 @@ def count_by_job_keyword(keyword: str):
 # ------------------ Run Server ------------------
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http")
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
 ```
 </details>
 
